@@ -70,6 +70,26 @@ web_modules/
 .env.*
 !.env.example
 
+# Local registry/auth files
+.npmrc
+!.npmrc.example
+.yarnrc.yml
+
+# Secrets and credentials
+.secrets/
+secrets/
+*.secret
+*.secrets
+*credentials*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache

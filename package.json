@@ -1,0 +1,51 @@
+{
+  "name": "pushpal",
+  "version": "0.3.0",
+  "description": "Cross-platform mobile notifications for Node.js via Telegram Bot, Bark and Ntfy.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlucPro/pushpal.git"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "scan:secrets": "node scripts/scan-secrets.mjs",
+    "test": "vitest run",
+    "build": "rollup -c && node scripts/copy-types.mjs",
+    "verify": "npm run scan:secrets && npm test && npm run build && npm pack --dry-run --cache /tmp/pushpal-npm-cache"
+  },
+  "keywords": [
+    "push",
+    "notification",
+    "telegram",
+    "bark",
+    "ntfy",
+    "mobile",
+    "cross-platform"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "rollup": "^4.0.0",
+    "vitest": "^4.1.7"
+  }
+}
