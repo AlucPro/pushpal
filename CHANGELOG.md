@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.0.0
 
 - Add GitHub Actions CI for Node.js 20, 22, and 24.
 - Add npm Trusted Publishing release workflow triggered by published GitHub releases.

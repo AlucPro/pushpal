@@ -1,6 +1,6 @@
 {
   "name": "pushpal",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Cross-platform mobile notifications for Node.js via Telegram Bot, Bark and Ntfy.",
   "type": "module",
   "repository": {
